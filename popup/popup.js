@@ -50,6 +50,14 @@ function createFavoriteElement(item, index) {
     deleteBtn.title = 'Remove';
     deleteBtn.onclick = () => deleteFavorite(index);
 
+    if (item.category) {
+        const badge = document.createElement('span');
+        badge.className = 'item-badge';
+        badge.textContent = item.category;
+        if (item.isClassifying) badge.textContent += '...';
+        header.insertBefore(badge, dateSpan); // Insert before date
+    }
+
     header.appendChild(dateSpan);
     header.appendChild(deleteBtn);
     li.appendChild(header);
