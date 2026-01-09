@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Favorites</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Favorites</h1>
+      <button id="clearAll" class="text-btn">Clear All</button>
+    </header>
+    <div id="emptyState" class="empty-state hidden">
+      <p>No favorites yet. Select text or images on a page and right-click "Add to Favorites".</p>
+    </div>
+    <ul id="favoritesList" class="favorites-list">
+      <!-- Items will be injected here -->
+    </ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
