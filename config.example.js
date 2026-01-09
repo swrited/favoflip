@@ -3,5 +3,5 @@
 export const CONFIG = {
     API_KEY: "YOUR_API_KEY_HERE",
     API_URL: "https://api.siliconflow.cn/v1/chat/completions",
-    MODEL: "Qwen/Qwen2.5-7B-Instruct"
+    MODEL: "deepseek-ai/DeepSeek-V3"
 };
